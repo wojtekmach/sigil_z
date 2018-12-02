@@ -12,6 +12,7 @@ defmodule SigilZ.MixProject do
       start_permanent: Mix.env() == :prod,
       description: @description,
       package: package(),
+      docs: docs(),
       deps: deps()
     ]
   end
@@ -23,7 +24,15 @@ defmodule SigilZ.MixProject do
     ]
   end
 
+  defp docs() do
+    [
+      main: "SigilZ"
+    ]
+  end
+
   defp deps() do
-    []
+    [
+      {:ex_doc, ">= 0.0.0", only: :dev}
+    ]
   end
 end
