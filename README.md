@@ -1,17 +1,13 @@
 # SigilZ
 
-Handles the ~Z sigil for UTC date times.
+Handles the ~Z sigil for UTC datetimes.
 
 ## Examples
 
 ```elixir
-import SigilZ
-
+iex> import SigilZ
 iex> ~Z[2015-01-13 13:00:07]
 ~Z[2015-01-13 13:00:07]
-
-iex> ~Z[2018-01]
-~Z[2018-01-01 00:00:00.000000]
 ```
 
 ## Installation
@@ -19,7 +15,7 @@ iex> ~Z[2018-01]
 ```elixir
 def deps do
   [
-    {:z, github: "wojtekmach/z"}
+    {:sigil_z, github: "wojtekmach/sigil_z"}
   ]
 end
 ```

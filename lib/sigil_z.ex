@@ -12,19 +12,15 @@ defmodule SigilZ do
       iex> ~Z[2015-01-13 13:00:07]
       ~Z[2015-01-13 13:00:07]
 
-      iex> ~Z[2018-01]
-      ~Z[2018-01-01 00:00:00.000000]
-
   """
   defmacro sigil_Z({:<<>>, _, [string]}, _) do
     Macro.escape(parse!(string))
   end
 
   defp parse!(string) do
-    zero = "0000-01-01 00:00:00.000000Z"
-    string = string <> String.slice(zero, String.length(string), 26)
-    {:ok, datetime, 0} = DateTime.from_iso8601(string)
-    datetime
+    string
+    |> NaiveDateTime.from_iso8601!()
+    |> DateTime.from_naive!("Etc/UTC")
   end
 end
 
