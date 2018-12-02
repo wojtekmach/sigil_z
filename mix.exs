@@ -20,7 +20,7 @@ defmodule SigilZ.MixProject do
   defp package() do
     [
       licenses: ["Apache 2.0"],
-      links: %{"GitHub" => "wojtekmach/sigil_z"}
+      links: %{"GitHub" => "https://github.com/wojtekmach/sigil_z"}
     ]
   end
 
