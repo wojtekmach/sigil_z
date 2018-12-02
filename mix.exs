@@ -1,17 +1,29 @@
 defmodule SigilZ.MixProject do
   use Mix.Project
 
-  def project do
+  @version "0.1.0"
+  @description "Handles the ~Z sigil for UTC datetimes."
+
+  def project() do
     [
-      app: :z,
-      version: "0.1.0",
+      app: :sigil_z,
+      version: @version,
       elixir: "~> 1.4",
       start_permanent: Mix.env() == :prod,
+      description: @description,
+      package: package(),
       deps: deps()
     ]
   end
 
-  defp deps do
+  defp package() do
+    [
+      licenses: ["Apache 2.0"],
+      links: %{"GitHub" => "wojtekmach/sigil_z"}
+    ]
+  end
+
+  defp deps() do
     []
   end
 end
