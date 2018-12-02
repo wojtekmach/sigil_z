@@ -1,11 +1,11 @@
-# Z
+# SigilZ
 
 Handles the ~Z sigil for UTC date times.
 
 ## Examples
 
 ```elixir
-import Z
+import SigilZ
 
 iex> ~Z[2015-01-13 13:00:07]
 ~Z[2015-01-13 13:00:07]

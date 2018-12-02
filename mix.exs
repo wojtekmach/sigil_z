@@ -1,4 +1,4 @@
-defmodule Z.MixProject do
+defmodule SigilZ.MixProject do
   use Mix.Project
 
   def project do

@@ -1,4 +1,4 @@
 defmodule ZTest do
   use ExUnit.Case
-  doctest Z, import: true
+  doctest SigilZ, import: true
 end
