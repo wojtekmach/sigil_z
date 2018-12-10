@@ -15,7 +15,7 @@ iex> ~Z[2015-01-13 13:00:07]
 ```elixir
 def deps do
   [
-    {:sigil_z, github: "wojtekmach/sigil_z"}
+    {:sigil_z, "~> 0.1"}
   ]
 end
 ```
