@@ -1,6 +1,6 @@
-# :warning: deprecated, use ~U sigil in Elixir v1.9 instead
-
 # SigilZ
+
+:warning: deprecated, use ~U sigil in Elixir v1.9 instead :warning:
 
 Handles the ~Z sigil for UTC datetimes.
 
